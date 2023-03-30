@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header-story {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2em;
+}
+
+.header-story-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.header-story-logo {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    width: 15%;
+    height: 15%;
+    object-fit: contain;
+}
+
+.header-story-text {
+    text-align: right;
+    color: white;
+    position: absolute;
+    margin: 0px;
+    top: 1%;
+    right: 1%;
+    display: grid;
+    grid-template-columns: 1f;
+    gap: 0.1em;
+}
+
+.header {
+    display: flex;
+    font-family: sans-serif;
+    padding: 1em 0;
+    text-align: center;
+    width: fit-content;
+}
+
+.header-left {
+    font-size: 12px;
+    border-bottom: 2px solid #5e5d5d;
+    padding: 0.5em;
+}
+
+.header-right {
+    font-size: 12px;
+    border-top: 2px solid #5e5d5d;
+    padding: 0.5em;
+}
+
+.header-middle {
+    font-size: 12px;
+    font-weight:bold;
+    background-color:#5e5d5d;
+    color: white;
+    padding: 0.5em;
+}
+
+.menu { 
+    font-family: sans-serif;
+}
+
+.menu-group-title { 
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #5e5d5d;
+}
+
+.menu-item-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu-item-detail {
+    line-height: 1.2;
+    font-size: 13px;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: 1f;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-item-txt {
+    flex-grow: 1;
+}
+
+.menu-item-img {
+    width: 90px;
+    height: 90px;
+    margin-right: 1.5em;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.menu-item-title-small {
+    font-size: 14px;
+}
+
+.menu-group-alt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+@media screen and (min-width: 992px) {
+    .menu-group-title {
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-bottom: 2px solid #5e5d5d;
+    }
+
+    .menu-item-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .menu-item-detail {
+        line-height: 1.2;
+        font-size: 15px;
+    }
+
+    .header-left {
+        font-size: 14px;
+        border-bottom: 2px solid #5e5d5d;
+        padding: 0.5em;
+    }
+    
+    .header-right {
+        font-size: 14px;
+        border-top: 2px solid #5e5d5d;
+        padding: 0.5em;
+    }
+    
+    .header-middle {
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #5e5d5d;
+        color: white;
+        padding: 0.5em;
+    }
+
+    .menu-group {
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-item-img {
+        width: 140px;
+        height: 140px;
+        margin-right: 1.5em;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    .menu-item-title-small {
+        font-size: 16px;
+    }
+
+    .menu-group-alt {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1em;
+        padding: 1em 0;
+    }
+}
